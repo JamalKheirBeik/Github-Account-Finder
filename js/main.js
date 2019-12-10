@@ -26,12 +26,12 @@ $(document).ready(function() {
                             <strong>${repo.name}</strong>: ${repo.description}
                         </div>
                         <div class="col-md-3">
-                            <span class="badge badge-dark">Forks: ${repo.forks_count}</span>
-                            <span class="badge badge-primary">Watchers: ${repo.watchers_count}</span>
-                            <span class="badge badge-success">Stars: ${repo.stargazers_count}</span>
+                            <span class="badge badge-success">Forks: ${repo.forks_count}</span>
+                            <span class="badge badge-danger">Watchers: ${repo.watchers_count}</span>
+                            <span class="badge badge-warning">Stars: ${repo.stargazers_count}</span>
                         </div>
                         <div class="col-md-2">
-                            <a href="${repo.html_url}" target="_blank" class="btn btn-default">Repo page</a>
+                            <a href="${repo.html_url}" target="_blank" class="btn btn-primary">Repo page</a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ $(document).ready(function() {
                     </div>
                     <div class="col-md-9">
                         <span class="badge badge-dark">Public Repos: ${user.public_repos}</span>
-                        <span class="badge badge-primary">Public Gists: ${user.public_gists}</span>
+                        <span class="badge badge-secondary">Public Gists: ${user.public_gists}</span>
                         <span class="badge badge-success">Followers: ${user.followers}</span>
                         <span class="badge badge-info">Following: ${user.following}</span>
                         <br><br>
