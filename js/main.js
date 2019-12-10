@@ -5,14 +5,14 @@ $(document).ready(function() {
     $.ajax({
       url: "https://api.github.com/users/" + username,
       data: {
-        client_id: "f4def1074527d8f6f322",
+        client_id: " 7dd088f3b4a11a734ae0052b198792812dbb7f0f ",
         client_secret: "0c307445f7283d35e77f1335768565b0fbcfd0f1"
       }
     }).done(function(user) {
       $.ajax({
         url: "https://api.github.com/users/" + username + "/repos",
         data: {
-          client_id: "f4def1074527d8f6f322",
+          client_id: " 7dd088f3b4a11a734ae0052b198792812dbb7f0f ",
           client_secret: "0c307445f7283d35e77f1335768565b0fbcfd0f1",
           sort: "created: asc",
           per_page: 5
