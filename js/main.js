@@ -5,15 +5,15 @@ $(document).ready(function() {
     $.ajax({
       url: "https://api.github.com/users/" + username,
       data: {
-        client_id: " 7dd088f3b4a11a734ae0052b198792812dbb7f0f ",
-        client_secret: "0c307445f7283d35e77f1335768565b0fbcfd0f1"
+        client_id: Client_ID,
+        client_secret: Client_Secret
       }
     }).done(function(user) {
       $.ajax({
         url: "https://api.github.com/users/" + username + "/repos",
         data: {
-          client_id: " 7dd088f3b4a11a734ae0052b198792812dbb7f0f ",
-          client_secret: "0c307445f7283d35e77f1335768565b0fbcfd0f1",
+          client_id: Client_ID, // This is my personal access token
+          client_secret: Client_Secret,
           sort: "created: asc",
           per_page: 5
         }
